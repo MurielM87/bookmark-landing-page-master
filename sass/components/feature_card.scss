@@ -1,0 +1,56 @@
+.feature_section {
+    @include flex-space-row;
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+        @include flex-space-column;
+    }
+    
+    .features_img {
+        position: relative;
+    
+        .img_features {
+            width: 550px;
+            margin-left: 100px;
+            @media screen and (max-width: map-get($breakpoints, mobile)) {
+                width: 90vw;
+                margin-left: 5vw;
+            }
+        }
+    
+        .features_background {
+            position: absolute;
+            top: 100px;
+            left: 0;
+            z-index: -1;
+            background-color: $soft_blue;
+            width: 450px;
+            height: 300px;
+            border-radius: 0 40% 40% 0;
+            @media screen and (max-width: map-get($breakpoints, mobile)) {
+                width: 90%;
+                height: 30%;
+                top: 30px;
+            }
+        }
+    }
+
+    .text_presentation {
+        margin: 40px;
+
+        h2 {
+            margin-bottom: 30px;
+        }
+        p {
+            line-height: 30px;
+            color: $grayish_blue;
+        }
+    }
+
+    .more_info {
+        background-color: $soft_blue;
+        font-size: 13px;
+        color: $white;
+        padding: 15px 25px;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+}

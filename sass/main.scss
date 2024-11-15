@@ -1,0 +1,26 @@
+@import 'utils/responsive.scss';
+@import 'utils/variables.scss';
+@import 'utils/mixins.scss';
+
+@import 'bases/normalize.scss';
+@import 'bases/body.scss';
+
+@import 'components/navbar.scss';
+@import 'components/header_btns.scss';
+@import 'components/header_img.scss';
+@import 'components/feature_card.scss';
+@import 'components/features.btn.scss';
+@import 'components/search_section.scss';
+@import 'components/share_section.scss';
+@import 'components/card_chrome.scss';
+@import 'components/card_firefox.scss';
+@import 'components/card_opera.scss';
+
+@import 'layout/header.scss';
+@import 'layout/footer.scss';
+@import 'layout/attribute.scss';
+
+@import 'pages/features.scss';
+@import 'pages/download.scss';
+@import 'pages/questions.scss';
+

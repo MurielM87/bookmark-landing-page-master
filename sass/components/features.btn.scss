@@ -1,0 +1,51 @@
+#features_btn {
+  margin-bottom: 40px;
+  @include flex-center-row;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    @include flex-center-column;
+    text-align: center;
+  }
+
+  #trait_mobile {
+    display: none;
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+      display: flex;
+      margin: 10px auto;
+      width: 90%;
+      border: 1px solid $grayish_blue;
+    }
+  }
+
+  .btn {
+    div {
+      list-style: none;
+      margin: 30px;
+      color: $grayish_blue;
+
+      &:hover {
+        color: $soft_red;
+        cursor: pointer;
+      }
+      &:focus {
+        color: $soft_red;
+        color: #000;
+        font-weight: 800;
+      }
+    }
+    .trait {
+      margin: 50px auto;
+      width: 120%;
+      border: 1px solid $grayish_blue;
+
+      &:focus {
+        width: 100%;
+        border: 2px solid $soft_red;
+      }
+
+      @media screen and (max-width: map-get($breakpoints, mobile)) {
+        width: 90%;
+        margin: 10px auto;
+      }
+    }
+  }
+}

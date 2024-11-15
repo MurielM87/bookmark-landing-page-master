@@ -1,0 +1,26 @@
+#download {
+    @include flex-center-column;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    p {
+        color: $grayish_blue;
+        text-align: center;
+        width: 50%;
+        margin: 10px auto 40px;
+    }
+    #card_internet {
+        position: relative;
+        height: 170vh;
+        @include flex-space-row;
+        margin: 30px;
+        @media screen and (max-width: map-get($breakpoints, mobile)) {
+            @include flex-center-column;
+            margin: 140px auto;
+        }
+        
+    }
+}

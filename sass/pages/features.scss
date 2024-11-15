@@ -1,0 +1,33 @@
+#features {
+    margin: 30px auto 100px;
+
+    #features_title {
+        text-align: center;
+        font-size: 26px;
+    }
+    #feature1 {
+        display: flex;
+    }
+    #feature2 {
+        display: none;
+    }
+    #feature3 {
+        display: none;
+    }
+
+    #presentation {
+        color: $grayish_blue;
+        text-align: center;
+        margin: 20px auto 60px;
+        width: 550px;
+        line-height: 40px;
+
+        @media screen and (max-width: map-get($breakpoints, mobile)) {
+            width: 100%;
+        }
+    }
+
+    #features_details {
+        @include flex-space-column;
+    }
+}

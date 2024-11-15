@@ -1,0 +1,49 @@
+#card_firefox {
+    position: absolute;
+    top: 40px;
+    left: 38%;
+    @include flex-center-column;
+    width: 25%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 8px rgba(0,0,0,0.1);
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    #firefox_img {
+        width: 70%;
+        margin: 20px auto;
+    }
+
+    h3, div {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .dots {
+        margin-top: 30px;
+    }
+
+    button {
+        margin: 20px;
+        padding: 10px 20px;
+        color: $white;
+        background-color: $soft_blue;
+        border: 2px solid $soft_blue;
+        border-radius: 5px;
+        &:hover {
+            cursor: pointer;
+            color: $soft_blue;
+            background-color: $white;
+            border: 2px solid $soft_blue;
+        }
+
+        @media screen and (max-width: map-get($breakpoints, mobile)) {
+            font-size: 15px;
+        }
+    }
+}

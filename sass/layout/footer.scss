@@ -1,0 +1,186 @@
+footer {
+  .footer_first {
+    background-color: $soft_blue;
+    color: $white;
+    @include flex-center-column;
+    align-items: center;
+    padding: 70px;
+    line-height: 35px;
+
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+      padding: 10px;
+    }
+
+    #joined {
+      font-size: 12px;
+      letter-spacing: 5px;
+      margin-bottom: 20px;
+    }
+
+    #footer_description {
+      width: 25%;
+      margin: auto;
+      margin-bottom: 20px;
+      font-size: 20px;
+      text-align: center;
+
+      @media screen and (max-width: map-get($breakpoints, mobile)) {
+        width: 90%;
+      }
+    }
+
+    #contact {
+      @include flex-center-row;
+      @media screen and (max-width: map-get($breakpoints, mobile)) {
+        @include flex-center-column;
+      }
+
+      #search_message {
+        @include flex-center-column;
+        padding: 2px;
+        border-radius: 5px;
+
+        #search {
+          position: relative;
+
+          .search_input {
+            padding: 6px;
+            border: 1px solid $grayish_blue;
+            border-radius: 5px;
+          }
+
+          #error {
+            display: none;
+            position: absolute;
+            top: 20%;
+            right: 3%;
+          }
+        }
+        .error_message {
+          display:none;
+          color: $white;
+          font-style: italic;
+          font-size: 11px;
+          line-height: 20px;
+        }
+        &.error {
+          background-color: $soft_red;
+          .search_input {
+            border-color: $soft_red;
+            background-color: $soft_red;
+          }
+          .error_message {
+            display: block;
+          }
+          #error {
+            display: block;
+          }
+        }
+      }
+      #btn_contact {
+        margin-left: 20px;
+        padding: 10px;
+        font-size: 14px;
+        color: #000;
+        background: $white;
+        border: 1px solid #000;
+
+        @media screen and (max-width: map-get($breakpoints, mobile)) {
+          margin: 10px 0;
+        }
+
+        &:hover,
+        &:focus {
+          cursor: pointer;
+          color: $white;
+          background-color: $soft_red;
+          border: 1px solid $soft_red;
+        }
+      }
+    }
+  }
+
+  #ended_footer {
+    background-color: $very_dark_blue;
+    color: $white;
+    @include flex-space-row;
+    align-items: center;
+    padding: 20px 0;
+
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+      @include flex-center-column;
+    }
+
+    #footer_mention {
+      @include flex-space-row;
+      align-items: center;
+
+      @media screen and (max-width: map-get($breakpoints, mobile)) {
+        @include flex-center-column;
+      }
+
+      #logo_footer {
+        @include flex-center-row;
+        margin-left: 60px;
+
+        @media screen and (max-width: map-get($breakpoints, mobile)) {
+          margin: 0;
+        }
+
+        i {
+          color: $white;
+          background-color: $soft_blue;
+          border-radius: 50%;
+          padding: 10px;
+        }
+
+        p {
+          font-family: "Rubik", sans-serif;
+          font-weight: 600;
+          color: $white;
+          margin: auto 10px;
+        }
+      }
+
+      ul {
+        @include flex-center-row;
+
+        @media screen and (max-width: map-get($breakpoints, mobile)) {
+          @include flex-center-column;
+        }
+
+        li {
+          list-style: none;
+          margin-left: 50px;
+          text-transform: uppercase;
+          font-size: 14px;
+
+          &:hover {
+            color: $soft_red;
+          }
+
+          @media screen and (max-width: map-get($breakpoints, mobile)) {
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+    #social_network {
+      margin-right: 20px;
+
+      @media screen and (max-width: map-get($breakpoints, mobile)) {
+        margin: 20px auto;
+      }
+
+      .fab {
+        font-size: 25px;
+        margin-right: 30px;
+
+        &:hover {
+          cursor: pointer;
+          color: $soft_red;
+        }
+      }
+    }
+  }
+}

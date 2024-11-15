@@ -1,0 +1,15 @@
+{
+  "name": "bookmark-landing-page-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Bookmark landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:style.css"
+  },
+  "author": "Muriel MARCHAL",
+  "license": "ISC",
+  "dependencies": {
+    "bookmark-landing-page-master": "file:",
+    "sass": "^1.80.4"
+  }
+}

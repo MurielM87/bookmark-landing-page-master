@@ -1,0 +1,17 @@
+#header_text {
+  @include flex-space-row;
+  @media screen and (max-width: map-get($breakpoints, mobile)){
+    @include flex-center-column;
+    text-align: center;
+  }
+
+  #text {
+    align-content: center;
+    margin-left: 100px;
+
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+      margin: 20px;
+    }
+  }
+  
+}
